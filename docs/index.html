@@ -48,7 +48,7 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
 <dialog id="quoteDialog"><div class="modal-head"><h2 id="modalTitle">报价明细</h2><div class="tools"><button class="btn small" data-action="modalOutput">导出 / 打印</button><button class="btn small" data-action="close" aria-label="关闭报价明细">关闭</button></div></div><div class="modal-body" id="modalBody"></div></dialog><dialog id="utilityDialog"><div class="modal-head"><h2 id="utilityTitle"></h2><button class="btn small" data-action="closeUtility" aria-label="关闭说明">关闭</button></div><div class="modal-body" id="utilityBody"></div></dialog><input id="importFile" type="file" accept=".json,application/json" hidden><div id="toast" class="toast hidden" role="status" aria-live="polite"></div><div id="printArea"></div>
 <script id="bootData" type="application/json">{}</script><script id="catalogData" type="application/json">{
   "schemaVersion": 1,
-  "version": "v20-brand-workflow",
+  "version": "v21-integrated-handoff",
   "groups": [
     {
       "id": "core",
@@ -1682,41 +1682,44 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
       "id": "C1-2",
       "name": "现有小程序交互与页面视觉设计",
       "group": "online",
-      "price": 25000,
+      "price": 28000,
       "unit": "包",
-      "description": "设计已确认功能清单内的页面布局、操作反馈和统一视觉。",
-      "delivery": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
+      "description": "设计已确认功能清单内的页面布局、操作反馈和统一视觉；设计开发一体承接时，包含必要的设计说明与交接资料。",
+      "delivery": "交付确认清单内的交互原型、页面视觉方案、常用状态说明及12个品类图标。可编辑设计文件或直接生成的前端工程源码，按实际制作路径在执行前确认；不默认同时交付独立设计稿、完整设计组件库和全量切图包。必要资料整理与内部开发交接已含，新增页面和独立功能另列。",
       "prerequisites": [
         "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
         "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
       ],
       "defaultSelected": true,
       "defaultQty": 1,
-      "source": "原表对外价",
+      "source": "用户确认合并交接费用",
       "rates": {},
       "examples": 0,
       "caseFigures": [],
       "explanation": {
         "title": "这项工作解决什么问题",
-        "meaning": "设计已确认功能清单内的页面布局、操作反馈和统一视觉。",
+        "meaning": "设计已确认功能清单内的页面布局、操作反馈和统一视觉；设计开发一体承接时，包含必要的设计说明与交接资料。",
         "scenarios": [
           "设计已确认功能清单内的页面布局、操作反馈和统一视觉。"
         ],
         "value": "用户更容易找到商品和完成操作；公司获得一致的界面及可复用设计。",
-        "boundary": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
+        "boundary": "按确认清单完成交互与视觉设计，含必要说明和内部开发交接；执行前确认采用可编辑设计文件或直接生成前端工程的制作路径及具体文件清单，不默认同时交付独立设计稿、完整组件库和全量切图包。代码开发、运行及最终源码交接按相应开发服务执行，不重复计算同一交接工作。",
         "compact": true
       },
-      "contentRevision": "2026-10-22-remaining-v4",
-      "contractNote": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
+      "contentRevision": "2026-10-22-integrated-handoff-v12",
+      "contractNote": "按确认清单完成交互与视觉设计，含必要说明和内部开发交接；执行前确认采用可编辑设计文件或直接生成前端工程的制作路径及具体文件清单，不默认同时交付独立设计稿、完整组件库和全量切图包。代码开发、运行及最终源码交接按相应开发服务执行，不重复计算同一交接工作。",
       "contentBaseline": {
         "id": "C1-2",
-        "name": "交互与视觉设计（打包）",
+        "name": "现有小程序交互与页面视觉设计",
         "group": "online",
         "price": 25000,
         "unit": "包",
-        "description": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
-        "delivery": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
-        "prerequisites": [],
+        "description": "设计已确认功能清单内的页面布局、操作反馈和统一视觉。",
+        "delivery": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
+        "prerequisites": [
+          "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
+          "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
+        ],
         "defaultSelected": true,
         "defaultQty": 1,
         "source": "原表对外价",
@@ -1724,73 +1727,133 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
         "examples": 0,
         "caseFigures": [],
         "explanation": {
-          "title": "基础品类图标｜图标系统规范",
-          "meaning": "为快速识别而设计的精简线描或扁平图形，重点是小尺寸清晰、含义稳定，以及线宽、比例、圆角和视觉重量一致。",
+          "title": "这项工作解决什么问题",
+          "meaning": "设计已确认功能清单内的页面布局、操作反馈和统一视觉。",
           "scenarios": [
-            "小程序果蔬、肉禽、蛋类等分类入口",
-            "同一图标的门店品类导视应用",
-            "已约定的包装背面功能提示"
+            "设计已确认功能清单内的页面布局、操作反馈和统一视觉。"
           ],
-          "value": "帮助顾客快速辨认分类和功能，让线上线下触点保持一致。",
-          "boundary": "当前UI包已含12个品类图标，不另收费；可复用图标不重收原创费，新增名称、功能含义或独立造型另核。包装食用说明不是天然包含在12个品类图标中，需先看清单。"
+          "value": "用户更容易找到商品和完成操作；公司获得一致的界面及可复用设计。",
+          "boundary": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
+          "compact": true
         },
-        "contentRevision": "2026-10-21-photo-v1",
+        "contentRevision": "2026-10-22-remaining-v4",
+        "contractNote": "交付确认清单内的交互原型、页面视觉稿、常用状态与组件；含12个品类图标。页面和状态以双方确认清单为准，不代表任意新增页面或功能均包含；不含代码开发。",
         "previousBaseline": {
+          "id": "C1-2",
           "name": "交互与视觉设计（打包）",
           "group": "online",
+          "price": 25000,
+          "unit": "包",
           "description": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
           "delivery": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
           "prerequisites": [],
-          "children": null,
-          "outputNote": null
+          "defaultSelected": true,
+          "defaultQty": 1,
+          "source": "原表对外价",
+          "rates": {},
+          "examples": 0,
+          "caseFigures": [],
+          "explanation": {
+            "title": "基础品类图标｜图标系统规范",
+            "meaning": "为快速识别而设计的精简线描或扁平图形，重点是小尺寸清晰、含义稳定，以及线宽、比例、圆角和视觉重量一致。",
+            "scenarios": [
+              "小程序果蔬、肉禽、蛋类等分类入口",
+              "同一图标的门店品类导视应用",
+              "已约定的包装背面功能提示"
+            ],
+            "value": "帮助顾客快速辨认分类和功能，让线上线下触点保持一致。",
+            "boundary": "当前UI包已含12个品类图标，不另收费；可复用图标不重收原创费，新增名称、功能含义或独立造型另核。包装食用说明不是天然包含在12个品类图标中，需先看清单。"
+          },
+          "contentRevision": "2026-10-21-photo-v1",
+          "previousBaseline": {
+            "name": "交互与视觉设计（打包）",
+            "group": "online",
+            "description": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
+            "delivery": "购物流程与页面结构、交互原型、品牌视觉及关键页、全量页面与图标设计；含 12 个品类图标",
+            "prerequisites": [],
+            "children": null,
+            "outputNote": null
+          }
         }
       }
     },
     {
       "id": "C1-3",
-      "name": "设计文件整理与开发交接",
+      "name": "设计交接资料整理（仅设计、第三方开发）",
       "group": "online",
       "price": 3000,
       "unit": "项",
-      "description": "把已确认页面设计整理成开发人员可使用的资料。",
-      "delivery": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
+      "description": "仅在设计交由客户或第三方开发，且需要额外整理约定交接资料时选用；设计开发一体项目的必要内部交接不再单独计费。",
+      "delivery": "按执行前确认的清单整理实际存在的设计文件、页面与状态说明、必要素材及交接资料，供第三方开发使用。交接轮次、文件格式与额外标注深度先确认；不承诺为AI生成代码的项目补造一套未制作的独立设计稿、完整组件库或全量切图。",
       "prerequisites": [
-        "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
-        "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
+        "确认接收方为客户或第三方开发人员，并明确所需文件、格式、说明深度和交接配合次数。",
+        "先核对设计或开发服务已含的资料与交接工作；同一份文件整理不重复选择。",
+        "按实际存在的设计文件或工程源码交接，不默认同时补交两套完整成果。"
       ],
-      "defaultSelected": true,
+      "defaultSelected": false,
       "defaultQty": 1,
       "source": "原表对外价",
       "rates": {},
       "examples": 0,
       "caseFigures": [],
-      "contractNote": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
-      "contentRevision": "2026-10-22-remaining-v4",
+      "contractNote": "适用于仅设计、交由第三方开发时的额外交接资料整理；基础设计应交文件和设计开发一体项目内已包含的必要交接不重复收费。具体文件、格式、说明深度及交接配合清单执行前确认，不含代码开发。",
+      "contentRevision": "2026-10-22-integrated-handoff-v12",
       "explanation": {
         "title": "这项工作解决什么问题",
-        "meaning": "把已确认页面设计整理成开发人员可使用的资料。",
+        "meaning": "仅在设计交由客户或第三方开发，且需要额外整理约定交接资料时选用；设计开发一体项目的必要内部交接不再单独计费。",
         "scenarios": [
           "把已确认页面设计整理成开发人员可使用的资料。"
         ],
         "value": "用户获得与设计一致的体验；公司减少设计与开发之间的信息遗漏。",
-        "boundary": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
+        "boundary": "适用于仅设计、交由第三方开发时的额外交接资料整理；基础设计应交文件和设计开发一体项目内已包含的必要交接不重复收费。具体文件、格式、说明深度及交接配合清单执行前确认，不含代码开发。",
         "compact": true
       },
       "contentBaseline": {
         "id": "C1-3",
-        "name": "设计实施",
+        "name": "设计文件整理与开发交接",
         "group": "online",
         "price": 3000,
         "unit": "项",
-        "description": "设计源文件、常用组件、标注切图与交接资料",
-        "delivery": "设计源文件、常用组件、标注切图与交接资料",
-        "prerequisites": [],
+        "description": "把已确认页面设计整理成开发人员可使用的资料。",
+        "delivery": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
+        "prerequisites": [
+          "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
+          "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
+        ],
         "defaultSelected": true,
         "defaultQty": 1,
         "source": "原表对外价",
         "rates": {},
         "examples": 0,
-        "caseFigures": []
+        "caseFigures": [],
+        "contractNote": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
+        "contentRevision": "2026-10-22-remaining-v4",
+        "explanation": {
+          "title": "这项工作解决什么问题",
+          "meaning": "把已确认页面设计整理成开发人员可使用的资料。",
+          "scenarios": [
+            "把已确认页面设计整理成开发人员可使用的资料。"
+          ],
+          "value": "用户获得与设计一致的体验；公司减少设计与开发之间的信息遗漏。",
+          "boundary": "交付设计源文件、常用组件、尺寸与状态说明、所需图标切图及交接资料。不含前端或后端代码开发；新增页面设计另列。",
+          "compact": true
+        },
+        "previousBaseline": {
+          "id": "C1-3",
+          "name": "设计实施",
+          "group": "online",
+          "price": 3000,
+          "unit": "项",
+          "description": "设计源文件、常用组件、标注切图与交接资料",
+          "delivery": "设计源文件、常用组件、标注切图与交接资料",
+          "prerequisites": [],
+          "defaultSelected": true,
+          "defaultQty": 1,
+          "source": "原表对外价",
+          "rates": {},
+          "examples": 0,
+          "caseFigures": []
+        }
       }
     },
     {
@@ -2403,7 +2466,7 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
       "price": 7000,
       "unit": "项",
       "description": "检查已确认功能能否连贯运行，部署并交接代码和操作资料。",
-      "delivery": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码和交接资料；含原约定3个月质保，针对交付代码缺陷。新增需求、持续运营和第三方费用另列，平台审核不作保证。",
+      "delivery": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码、必要素材和运行／交接资料；必要资料整理已含，不重复另收内部设计交接费。执行前确认设计文件或直接生成前端工程的制作路径及文件清单，不默认同时交付独立设计稿、完整组件库和全量切图包。含原约定3个月质保，针对交付代码缺陷；新增需求、持续运营和第三方费用另列，平台审核不作保证。",
       "prerequisites": [
         "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
         "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
@@ -2414,8 +2477,8 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
       "rates": {},
       "examples": 0,
       "caseFigures": [],
-      "contractNote": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码和交接资料；含原约定3个月质保，针对交付代码缺陷。新增需求、持续运营和第三方费用另列，平台审核不作保证。",
-      "contentRevision": "2026-10-22-remaining-v4",
+      "contractNote": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码、必要素材和运行／交接资料；必要资料整理已含，不重复另收内部设计交接费。执行前确认设计文件或直接生成前端工程的制作路径及文件清单，不默认同时交付独立设计稿、完整组件库和全量切图包。含原约定3个月质保，针对交付代码缺陷；新增需求、持续运营和第三方费用另列，平台审核不作保证。",
+      "contentRevision": "2026-10-22-integrated-handoff-v12",
       "explanation": {
         "title": "这项工作解决什么问题",
         "meaning": "检查已确认功能能否连贯运行，部署并交接代码和操作资料。",
@@ -2428,19 +2491,50 @@ select{appearance:none;padding:8px 34px 8px 12px;background-image:url("data:imag
       },
       "contentBaseline": {
         "id": "C4-6",
-        "name": "集成测试、部署与交接",
+        "name": "功能测试、上线部署与交接",
         "group": "online",
         "price": 7000,
         "unit": "项",
-        "description": "测试记录、验收缺陷处理、部署及回退说明、源代码与交接资料",
-        "delivery": "测试记录、验收缺陷处理、部署及回退说明、源代码与交接资料",
-        "prerequisites": [],
+        "description": "检查已确认功能能否连贯运行，部署并交接代码和操作资料。",
+        "delivery": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码和交接资料；含原约定3个月质保，针对交付代码缺陷。新增需求、持续运营和第三方费用另列，平台审核不作保证。",
+        "prerequisites": [
+          "以双方确认的现有功能、页面与本次改动清单为报价依据；目前页面盘点尚未完成，不视为范围已全部确认。",
+          "新增功能先确认工作量与价格，再新增报价项或在本组补充报价项中列明；单项备注记录额外约定，不自动改变费用。"
+        ],
         "defaultSelected": true,
         "defaultQty": 1,
         "source": "原表对外价",
         "rates": {},
         "examples": 0,
-        "caseFigures": []
+        "caseFigures": [],
+        "contractNote": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码和交接资料；含原约定3个月质保，针对交付代码缺陷。新增需求、持续运营和第三方费用另列，平台审核不作保证。",
+        "contentRevision": "2026-10-22-remaining-v4",
+        "explanation": {
+          "title": "这项工作解决什么问题",
+          "meaning": "检查已确认功能能否连贯运行，部署并交接代码和操作资料。",
+          "scenarios": [
+            "检查已确认功能能否连贯运行，部署并交接代码和操作资料。"
+          ],
+          "value": "用户能完成约定业务流程；公司有可验收、可接手的系统和上线资料。",
+          "boundary": "交付测试记录、验收范围内缺陷处理、部署及回退说明、源代码和交接资料；含原约定3个月质保，针对交付代码缺陷。新增需求、持续运营和第三方费用另列，平台审核不作保证。",
+          "compact": true
+        },
+        "previousBaseline": {
+          "id": "C4-6",
+          "name": "集成测试、部署与交接",
+          "group": "online",
+          "price": 7000,
+          "unit": "项",
+          "description": "测试记录、验收缺陷处理、部署及回退说明、源代码与交接资料",
+          "delivery": "测试记录、验收缺陷处理、部署及回退说明、源代码与交接资料",
+          "prerequisites": [],
+          "defaultSelected": true,
+          "defaultQty": 1,
+          "source": "原表对外价",
+          "rates": {},
+          "examples": 0,
+          "caseFigures": []
+        }
       }
     },
     {
@@ -4553,7 +4647,7 @@ return {calculate,valid,compareQuotes};});
 const copy=x=>JSON.parse(JSON.stringify(x));
 function stringifyStorage(data){const images=[],ids=new Map();const packed=JSON.parse(JSON.stringify(data,(key,value)=>{if(typeof value==='string'&&value.startsWith('data:image/')){if(!ids.has(value)){ids.set(value,images.length);images.push(value);}return {__quoteImage:ids.get(value)};}return value;}));packed.imageAssets=images;return JSON.stringify(packed);}
 function parseStorage(text){if(!text)return null;const packed=JSON.parse(text);if(!packed?.imageAssets)return packed;const images=packed.imageAssets;delete packed.imageAssets;return JSON.parse(JSON.stringify(packed),(key,value)=>{if(value&&typeof value==='object'&&Object.keys(value).length===1&&Number.isInteger(value.__quoteImage)){const image=images[value.__quoteImage];if(typeof image!=='string'||!image.startsWith('data:image/'))throw Error('本机图片索引无效');return image;}return value;});}
-function makeProject(catalog,draft,id){return {id,catalog:copy(catalog),draft:copy(draft),standardVersion:catalog.version||'初始标准',updatedAt:new Date().toISOString()};}
+function makeProject(catalog,draft,id){const p={id,catalog:copy(catalog),draft:copy(draft),standardVersion:catalog.version||'初始标准',updatedAt:new Date().toISOString()};integrateHandoff(p);return p;}
 function migrate(saved,seed,draft,id){
  const library=copy(saved?.library||saved?.catalog||seed);
  const projects=copy(saved?.projects?.length?saved.projects:[makeProject(saved?.catalog||seed,saved?.draft||draft,id)]);
@@ -4586,17 +4680,29 @@ function syncStandards(project,library){
  if(JSON.stringify(next)!==JSON.stringify(item))changed++;return next;});
  project.standardVersion=new Date().toISOString();return changed;
 }
+function integrateHandoff(p){
+ if(p.handoffIntegration||!['第零农场','地灵农场'].includes(p.draft?.client))return;
+ const items=p.catalog.items,selections=p.draft.selections,source=items.find(i=>i.id==='C1-3'),target=items.find(i=>i.id==='C1-2'),ss=selections['C1-3'],ts=selections['C1-2'];
+ if(!source||!target||!ts?.selected||!['C4-2','C4-3','C4-4','C4-6'].some(id=>selections[id]?.selected))return;
+ const tq=Number(ts.qty||1),sq=Number(ss?.qty||1),tr=ts.override??target.price,sr=ss?.override??source.price;
+ // Nonstandard quantities stay reviewable rather than silently rounding a merged quote.
+ if(tq!==1||(ss?.selected&&sq!==1)||!Number.isFinite(tr)||tr<0||(ss?.selected&&(!Number.isFinite(sr)||sr<0))){if(Number.isFinite(tr)&&tr>=0)ts.override=tr;p.handoffIntegrationPending='交接费用合并需按本项目数量与范围复核，原计价暂保留。';return;}
+ const combined=tr+(ss?.selected?sr:0);p.handoffIntegration={revision:'integrated-handoff-v1',sourceItem:copy(source),sourceSelection:copy(ss||{}),previousTargetSelection:copy(ts),combinedPrice:combined};
+ ts.override=combined===target.price&&ts.override==null?null:combined;
+ if(ss?.quoteNote?.trim())ts.quoteNote=[ts.quoteNote,'原设计交接约定：'+ss.quoteNote.trim()].filter(Boolean).join('\n');
+ p.catalog.items=items.filter(i=>i.id!=='C1-3');delete selections['C1-3'];
+}
 function upgradeContent(library,projects,seed,selectionFor){
  const update=(c,draft)=>{
   for(const fresh of seed.items){const item=c.items.find(i=>i.id===fresh.id);if(!item||!fresh.contentRevision||item.contentRevision===fresh.contentRevision)continue;
    const previousExamples=item.examples;const before=fresh.contentBaseline||{},history=[];let h=before;while(h&&Object.keys(h).length){history.push(h);h=h.previousBaseline;}
    const unchanged=(key,value)=>value===undefined||history.some(b=>JSON.stringify(value)===JSON.stringify(b[key]));
-   for(const key of ['name','group','unit','description','delivery','prerequisites','children','outputNote','helpNotes','defaultBranch','contractNote','examples','pendingChangeRates','scopeGuide'])if(fresh[key]!==undefined&&unchanged(key,item[key]))item[key]=copy(fresh[key]);
+   for(const key of ['name','group','unit','description','delivery','prerequisites','children','outputNote','helpNotes','defaultBranch','contractNote','examples','pendingChangeRates','scopeGuide','defaultSelected'])if(fresh[key]!==undefined&&unchanged(key,item[key]))item[key]=copy(fresh[key]);
    if(fresh.explanation)item.explanation=copy(fresh.explanation);
    if(fresh.mediaRevision){for(const key of ['image','imageCaption','gallery'])if(fresh[key]!==undefined)item[key]=copy(fresh[key]);item.mediaRevision=fresh.mediaRevision;}
    const sel=draft?.selections?.[item.id];if(sel){if(['B-5b','B-7'].includes(item.id)&&previousExamples!==undefined&&fresh.examples!==previousExamples&&sel.contentTotal===previousExamples*(sel.qty||1))sel.contentTotal=fresh.examples*(sel.qty||1);if(fresh.examples>0)sel.contentTotal=Math.max(sel.contentTotal||0,fresh.examples*(sel.qty||1));}
-   if(['2026-10-21-core-v2','2026-10-22-store-v3','2026-10-22-review-v5','2026-10-22-app-help-v6','2026-10-22-guide-case-v8','2026-10-22-migration-scope-v9','2026-10-22-approved-media-v7','2026-10-22-release-review-v10','2026-10-22-core-workflow-v11'].includes(fresh.contentRevision)){
-    if(item.source!=='自定义标准价'&&unchanged('price',item.price))item.price=fresh.price;
+   if(['2026-10-21-core-v2','2026-10-22-store-v3','2026-10-22-review-v5','2026-10-22-app-help-v6','2026-10-22-guide-case-v8','2026-10-22-migration-scope-v9','2026-10-22-approved-media-v7','2026-10-22-release-review-v10','2026-10-22-core-workflow-v11','2026-10-22-integrated-handoff-v12'].includes(fresh.contentRevision)){
+    if(item.source!=='自定义标准价'&&unchanged('price',item.price)&&!(fresh.id==='C1-2'&&fresh.contentRevision==='2026-10-22-integrated-handoff-v12'&&draft&&!['第零农场','地灵农场'].includes(draft.client)))item.price=fresh.price;
     if(unchanged('rates',item.rates)&&fresh.rates)item.rates=copy(fresh.rates);
     if(fresh.branches){const previous=item.branches||[],selection=draft?.selections?.[item.id];
      item.branches=fresh.branches.map(b=>{const prev=previous.find(x=>x.id===b.id);if(!prev)return copy(b);const next=copy(b),baseline=history.flatMap(x=>x.branches||[]).find(x=>x.id===b.id&&x.price===prev.price);if(item.source==='自定义标准价'||!baseline)next.price=prev.price;return next;});
@@ -4614,7 +4720,7 @@ function upgradeContent(library,projects,seed,selectionFor){
  };
  update(library);
  for(const fresh of seed.items)if(fresh.contentRevision&&!library.items.some(i=>i.id===fresh.id)){library.items.push(copy(fresh));const g=seed.groups.find(g=>g.id===fresh.group);if(g&&!library.groups.some(x=>x.id===g.id))library.groups.push(copy(g));}
- for(const p of projects){update(p.catalog,p.draft);
+ for(const p of projects){integrateHandoff(p);update(p.catalog,p.draft);
   if(p.draft.client==='第零农场'&&p.catalog.items.some(i=>i.id==='C2'||i.id==='C3'))addServices(p,seed,seed.items.filter(i=>i.group==='media'||i.id==='APP-1').map(i=>i.id),selectionFor);
  }
 }
